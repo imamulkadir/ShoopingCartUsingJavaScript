@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamia's Kitchen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Lamia's Store</h1>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="./images/burger.jpg" class="img" alt="" />
+        </div>
+
+        <div class="card-title">
+          <h3>Chicken Burger</h3>
+          <h3>Size: Large</h3>
+          <h3 class="price">Price: $ <span id="price">50</span></h3>
+          <i class="fa-solid fa-circle-plus icon" onclick="increment('count', 'price', 'item')"></i>
+          <input class="input" type="button" name="" id="count" value="0" />
+          <i class="fa-solid fa-circle-minus icon" onclick="decrement('count', 'price', 'item')"></i>
+          <span class="item">Your Item $ <span id="item">000</span></span>
+        </div>
+
+        <div class="clear"></div>
+        <hr class="hr-style" />
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="./images/pizza.jpg" class="img" alt="" />
+        </div>
+
+        <div class="card-title">
+          <h3>Chicken Pizza</h3>
+          <h3>Size: 12'</h3>
+
+          <h3 class="price">Price: $ <span id="price1">90</span></h3>
+
+          <i class="fa-solid fa-circle-plus icon" onclick="increment('count1', 'price1', 'item1')"></i>
+
+          <input class="input" type="button" name="" id="count1" value="0" />
+
+          <i class="fa-solid fa-circle-minus icon" onclick="decrement('count1', 'price1', 'item1')"></i>
+
+          <span class="item">Your Item $ <spa id="item1">000</span></span>
+
+        </div>
+
+        <div class="clear"></div>
+        <hr class="hr-style" />
+      </div>
+    </div>
+
+    <div class="fixed">
+      <h1 class="total">Receipt</h1>
+      <h2>Product Amount: $ <span id="pr_amount">00</span></h2>
+      <h2>Delivery Charge: $ <span id="charge">25</span></h2>
+      -----------------------------------------------
+      ----------------------------------------------
+      <h2>Total Amount: $ <span id="total_amount">00</span></h2>
+      <hr class="hr-style" />
+      <div class="coupon_div" id="coupon_div">
+        <h4 class="coupon">$50 Coupon Code</h4><br>
+        <h4 class="code">Your Code is: LA_MIA</h4>
+        <input class="coupon-input" type="text" placeholder="Your coupon code..." id="couponInput"><br>
+        <button class="apply" id="applyBtn">Apply</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- 
+    <i class="fa-solid fa-circle-plus"></i>
+    <i class="fa-solid fa-circle-minus"></i> 
+-->
